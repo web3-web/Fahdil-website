@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAHDiL - Toko Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .payment-methods img {
+      width: 100px;
+      margin-right: 10px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .order-form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+    .order-form input, .order-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .order-form button {
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .wa-button {
+      background: #25D366;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FAHDiL</h1>
+    <p>Toko Online Terpercaya - Langsung Transfer ke DANA, OVO, Gopay</p>
+  </header>
+
+  <main>
+    <section class="product">
+      <h2>Produk Unggulan</h2>
+      <img src="https://via.placeholder.com/300" alt="Gambar Produk" />
+      <p>Deskripsi produk lengkap yang menjelaskan keunggulan, kualitas, dan manfaat bagi pembeli.</p>
+      <h3>Harga: Rp150.000</h3>
+    </section>
+
+    <section class="contact-info">
+      <h2>Hubungi Penjual</h2>
+      <p>Nomor WhatsApp: <strong id="whatsapp-number">+62 812-3456-7890</strong></p>
+      <p>Nomor Pemilik: <strong id="owner-number">+62 811-2233-4455</strong></p>
+      <a class="wa-button" href="https://wa.me/6281234567890" target="_blank">Chat Sekarang di WhatsApp</a>
+    </section>
+
+    <section class="payment">
+      <h2>Pembayaran Langsung</h2>
+      <p>Silakan transfer ke salah satu dompet digital berikut:</p>
+      <div class="payment-methods">
+        <p>DANA: <strong>0812-XXXX-XXXX</strong></p>
+        <p>OVO: <strong>0813-XXXX-XXXX</strong></p>
+        <p>Gopay: <strong>0814-XXXX-XXXX</strong></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Dana_logo.svg/1200px-Dana_logo.svg.png" alt="DANA" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Logo_ovo_purple.svg" alt="OVO" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_GoPay.svg" alt="Gopay" />
+      </div>
+    </section>
+
+    <section class="order-form">
+      <h2>Formulir Pemesanan</h2>
+      <form action="https://formspree.io/f/moqgrqno" method="POST">
+        <input type="text" name="nama" placeholder="Nama Anda" required />
+        <input type="text" name="nomor" placeholder="Nomor HP" required />
+        <textarea name="alamat" placeholder="Alamat Lengkap" required></textarea>
+        <input type="number" name="jumlah" placeholder="Jumlah Pesanan" required />
+        <button type="submit">Kirim Pesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FAHDiL. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
